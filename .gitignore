@@ -1,0 +1,9 @@
+PKG-INFO
+PKG-INFO
+SOURCES.txt
+top_level.txt
+dependency_links.txt
+entry_points.txt
+sudoku_plus.egg-info
+__pycache__
+*.pyc

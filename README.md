@@ -13,25 +13,25 @@ A complete **Sudoku toolkit in Python** featuring:
 ## 📂 Project Structure
 
 ```
-sudoku\_plus/
----- src
-    │── sudoku\_plus/
-    │   ├── **init**.py
-    │   ├── board.py       # Sudoku board representation & utilities
-    │   ├── generator.py   # Puzzle generator
-    │   ├── solver.py      # Solver algorithms
-    │   ├── validator.py   # Validator for checking correctness
-    │   └── cli.py         # Command line interface
-    │
-│── tests/
-│   ├── test\_board.py
-│   ├── test\_generator.py
-│   ├── test\_solver.py
-│   ├── test\_validator.py
+sudoku_plus/
+│── src/
+│   └── sudoku_plus/
+│       ├── __init__.py
+│       ├── board.py
+│       ├── generator.py
+│       ├── solver.py
+│       ├── validator.py
+│       └── cli.py
 │
-│── main.py            # Entry point (runs CLI)
-│── requirements.txt   # Dependencies (if any)
-│── README.md          # Documentation
+│── tests/
+│   ├── test_board.py
+│   ├── test_generator.py
+│   ├── test_solver.py
+│   ├── test_validator.py
+│
+│── main.py
+│── requirements.txt
+│── README.md
 ````
 
 ---
@@ -42,14 +42,25 @@ Clone this repository:
 
 ```bash
 git clone https://github.com/BaseMax/SudokuPython.git
-cd SudokuPython/sudoku_plus
+cd SudokuPython
 ````
 
 (Optional) Create a virtual environment:
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+On Linux:
+
+```bash
+source venv/bin/activate
+```
+
+On Windows:
+
+```bash
+venv\Scripts\activate
 ```
 
 Install requirements:
@@ -58,14 +69,30 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
----
+## Install your project in editable mode
 
-## 🚀 Running the Project
-
-### Run the CLI
+From project root:
 
 ```bash
-python main.py
+pip install -e .
+```
+
+> `-e` = editable → you can edit source code without reinstalling.
+
+After this, sudoku_plus is recognized as a proper Python package.
+
+## Run your CLI anywhere
+
+Now you can do:
+
+```bash
+python -m sudoku_plus.cli gen --size 9 --difficulty medium
+```
+
+Or, because we added [project.scripts], you can also run directly:
+
+```bash
+sudoku gen --size 9 --difficulty medium
 ```
 
 This will start the interactive CLI where you can choose:

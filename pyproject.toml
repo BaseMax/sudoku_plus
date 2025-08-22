@@ -1,27 +1,26 @@
 [build-system]
-requires = ["setuptools>=62"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "sudoku-plus"
-version = "0.1.0"
-description = "Sudoku generator, solver, validator, and CLI (9x9 & 4x4)"
-readme = "README.md"
-requires-python = ">=3.9"
-authors = [{name = "Max Base"}, {name="ChatGPT Assistant"}]
-license = {text = "MIT"}
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Topic :: Games/Entertainment :: Puzzle Games",
-  "Topic :: Software Development :: Libraries :: Python Modules"
+version = "1.0.0"
+description = "Sudoku generator, solver, and validator in Python"
+authors = [
+    { name = "BaseMax", email = "maxbasecode@gmail.com" }
 ]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
 
-[project.scripts]
-sudoku = "sudoku_plus.cli:main"
+[project.urls]
+Homepage = "https://github.com/BaseMax/SudokuPython"
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.scripts]
+sudoku = "sudoku_plus.cli:main"
