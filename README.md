@@ -45,8 +45,8 @@ sudoku_plus/
 Clone this repository:
 
 ```bash
-git clone https://github.com/BaseMax/SudokuPython.git
-cd SudokuPython
+git clone https://github.com/BaseMax/sudoku_plus.git
+cd sudoku_plus
 ````
 
 (Optional) Create a virtual environment:
@@ -180,4 +180,5 @@ pytest tests/test_solver.py
 ## 📜 License
 
 MIT License © 2025 [BaseMax](https://github.com/BaseMax)
+
 
