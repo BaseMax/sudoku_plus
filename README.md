@@ -2,11 +2,11 @@
 
 A complete **Sudoku toolkit in Python** featuring:
 
-- Sudoku board generator  
-- Sudoku solver (backtracking + optional advanced heuristics)  
-- Validator (check if a Sudoku is valid)  
-- CLI interface for generating and solving puzzles  
-- Test suite for all modules  
+- Sudoku board generator
+- Sudoku solver (backtracking + optional advanced heuristics)
+- Validator (check if a Sudoku is valid)
+- CLI interface for generating and solving puzzles
+- Test suite for all modules
 
 ---
 
