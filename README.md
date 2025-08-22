@@ -1,5 +1,9 @@
 # Sudoku Plus 🧩
 
+Sudoku Plus is a complete Python toolkit for Sudoku enthusiasts, hobbyists, and developers. Whether you want to generate challenging puzzles, solve them programmatically, or validate solutions, this project provides all the tools you need.
+
+> With a clean CLI interface, modular Python code, and a full test suite, Sudoku Plus is perfect for learning algorithms, experimenting with puzzle generation techniques, or integrating Sudoku features into your own projects.
+
 A complete **Sudoku toolkit in Python** featuring:
 
 - Sudoku board generator
@@ -176,3 +180,4 @@ pytest tests/test_solver.py
 ## 📜 License
 
 MIT License © 2025 [BaseMax](https://github.com/BaseMax)
+
