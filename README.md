@@ -95,19 +95,12 @@ Or, because we added [project.scripts], you can also run directly:
 sudoku gen --size 9 --difficulty medium
 ```
 
-This will start the interactive CLI where you can choose:
-
-* Generate a Sudoku puzzle
-* Solve an existing Sudoku
-* Validate a Sudoku board
-* Print puzzles in terminal
-
 ---
 
 ### 🔹 Generate a Sudoku Puzzle
 
 ```bash
-python -m sudoku.generator --size 9 --difficulty medium
+python -m sudoku_plus.cli gen --size 9 --difficulty medium
 ```
 
 * `--size` → board size (default: 9)
@@ -116,7 +109,7 @@ python -m sudoku.generator --size 9 --difficulty medium
 Example:
 
 ```bash
-python -m sudoku.generator --size 9 --difficulty hard
+python -m sudoku_plus.cli gen --size 9 --difficulty hard
 ```
 
 ---
@@ -126,13 +119,13 @@ python -m sudoku.generator --size 9 --difficulty hard
 Provide a puzzle as a string (`0` = empty):
 
 ```bash
-python -m sudoku.solver "530070000600195000098000060800060003400803001700020006060000280000419005000080079"
+python -m sudoku_plus.cli solve "530070000600195000098000060800060003400803001700020006060000280000419005000080079"
 ```
 
 Or read from file:
 
 ```bash
-python -m sudoku.solver --file puzzle.txt
+python -m sudoku_plus.cli solve --file puzzle.txt
 ```
 
 ---
@@ -140,7 +133,13 @@ python -m sudoku.solver --file puzzle.txt
 ### 🔹 Validate a Sudoku Board
 
 ```bash
-python -m sudoku.validator "valid_puzzle_string"
+python -m sudoku_plus.cli validate <puzzle_string> <solution_string>
+```
+
+For example:
+
+```bash
+python -m sudoku_plus.cli validate "530070000600195000098000060800060003400803001700020006060000280000419005000080079" "534678912672195348198342567859761423426853791713924856961537284287419635345286179"
 ```
 
 ---
